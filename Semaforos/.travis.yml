@@ -1,0 +1,8 @@
+language: c
+
+services:
+  - docker
+
+script:
+- docker build -t build .
+- docker run build
